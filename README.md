@@ -1,7 +1,31 @@
-<<<<<<< HEAD
 # JLS Parish Library Scraper
+A Python scraper that extracts data from the Jamaica Library Service parish library pages.
 
-Files:
+Example page:
+https://www.jls.gov.jm/clarendon-parish-library/
+
+## Data Collected
+
+The scraper extracts:
+
+- Parish library page title
+- Parish URL
+- Overview/history text
+- Services offered
+- Branch library name
+- Address
+- Phone numbers
+- Email
+- Status (Closed / Part-time / etc)
+- Opening hours
+
+  
+- no hardcoded branch-name allowlists
+- conservative branch-boundary detection
+- parser validation that fails on obviously bad output
+- page-level extraction summary output
+  
+## Files:
 - `scrape_jls_parish_libraries.py` — scraper script
 - outputs:
   - `jls_parish_libraries.json`
@@ -24,27 +48,6 @@ python scrape_jls_parish_libraries.py --outdir data
   - `collect_services()`
   - `collect_branch_records()`
   - `STOP_HEADINGS`
-# JLS Parish Library Scraper
-
-A Python scraper that extracts data from the Jamaica Library Service parish library pages.
-
-Example page:
-https://www.jls.gov.jm/clarendon-parish-library/
-
-## Data Collected
-
-The scraper extracts:
-
-- Parish library page title
-- Parish URL
-- Overview/history text
-- Services offered
-- Branch library name
-- Address
-- Phone numbers
-- Email
-- Status (Closed / Part-time / etc)
-- Opening hours
 
 ## Installation
 

@@ -28,9 +28,10 @@ Because the JLS website presents branch information using card-based layouts tha
 ```mermaid
 flowchart TD
     A[JLS Website] --> B[Python Scraper]
-    B --> C[Structured Dataset<br>(CSV + JSON)]
+    B --> C[Structured Dataset CSV and JSON]
     C --> D[GitHub Actions Workflow]
     D --> E[Automated Commit to Repository]
+```
 
 The workflow runs weekly and commits updates only when the dataset changes.
 

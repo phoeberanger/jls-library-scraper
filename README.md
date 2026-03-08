@@ -1,5 +1,7 @@
 # JLS Parish Library Scraper
 
+![Update dataset](https://github.com/phoeberanger/jls-library-scraper/actions/workflows/update-data.yml/badge.svg)
+
 ## About
 
 This repository contains an automated data pipeline that collects and maintains a structured dataset of parish library branches operated by the Jamaica Library Service (JLS).
@@ -24,18 +26,17 @@ Because the JLS website presents branch information using card-based layouts tha
 
 ## Data Pipeline Architecture
 JLS Website
-      │
-      ▼
+│
+▼
 Python Scraper
-      │
-      ▼
-Structured Dataset
-(CSV + JSON)
-      │
-      ▼
+│
+▼
+Structured Dataset (CSV + JSON)
+│
+▼
 GitHub Actions (scheduled)
-      │
-      ▼
+│
+▼
 Automated commits to repository
 
 The workflow runs weekly and commits updates only when the dataset changes.

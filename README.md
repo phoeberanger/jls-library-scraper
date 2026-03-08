@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # JLS Parish Library Scraper
 
 Files:
@@ -49,3 +50,4 @@ The scraper extracts:
 
 ```bash
 pip install -r requirements.txt
+

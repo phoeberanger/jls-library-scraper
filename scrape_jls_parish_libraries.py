@@ -4,7 +4,6 @@ Scrape Jamaica Library Service (JLS) parish library pages into structured data.
 
 Design goals
 ------------
-This scraper is built to stand up to scrutiny:
 - no hardcoded branch-name allowlists
 - no dependence on brittle sibling traversal
 - explicit record-boundary detection with lookahead

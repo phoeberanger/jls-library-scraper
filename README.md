@@ -25,19 +25,12 @@ Operational status indicators
 Because the JLS website presents branch information using card-based layouts that vary across parish pages, the scraper reconstructs structured records from page text and applies validation logic to produce consistent output.
 
 ## Data Pipeline Architecture
-JLS Website
-│
-▼
-Python Scraper
-│
-▼
-Structured Dataset (CSV + JSON)
-│
-▼
-GitHub Actions (scheduled)
-│
-▼
-Automated commits to repository
+```mermaid
+flowchart TD
+    A[JLS Website] --> B[Python Scraper]
+    B --> C[Structured Dataset<br>(CSV + JSON)]
+    C --> D[GitHub Actions Workflow]
+    D --> E[Automated Commit to Repository]
 
 The workflow runs weekly and commits updates only when the dataset changes.
 
